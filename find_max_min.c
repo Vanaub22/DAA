@@ -1,8 +1,6 @@
 //to find the maximum and minimum element using divide and conquer
 #include<stdio.h>
-#include<ctype.h>
 #include<stdlib.h>
-#include<stdbool.h>
 void main()
 {
 	int result,n,*arr,i,x;
@@ -16,7 +14,7 @@ void main()
 	printf("\nThe maximum element is: %d",find_max(arr,0,n-1));	
 	printf("\n");
 }//end of main
- find_max(int *arr,int start,int end){
+find_max(int *arr,int start,int end){
 	int max=arr[0],mid=start+(end-start)/2;
 	if(start==end)
 	return(arr[start]);
@@ -26,7 +24,7 @@ void main()
 	int max2=(find_max(arr,mid,end));
 	return((max1<max2)?(max2):(max1));
 }//end of fn.
- find_min(int *arr,int start,int end){
+find_min(int *arr,int start,int end){
 	int min=arr[0],mid=start+(end-start)/2;
 	if(start==end)
 	return(arr[start]);
